@@ -1,0 +1,20 @@
+{
+  "name": "pnpm-monorepo-sample-v3",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "pnpm -F \"api\"",
+    "web": "pnpm -F \"web\""
+  },
+  "engines": {
+    "pnpm": "8.15.3",
+    "npm": "please_use_pnpm_instead",
+    "yarn": "please_use_pnpm_instead"
+  },
+  "packageManager": "pnpm@8.15.3",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3"
+  }
+}

@@ -1,0 +1,39 @@
+x-common: &common
+  env_file:
+    # - .env
+    - .env.local
+
+services:
+  web:
+    <<: *common
+    container_name: web
+    build:
+      dockerfile: web.Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    volumes:
+      - .:/app
+  api:
+    <<: *common
+    container_name: api
+    build:
+      dockerfile: api.Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+
+  db:
+    <<: *common
+    container_name: db
+    image: postgres:16
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/app/postgres/init.d:/docker-entrypoint-initdb.d
+      - ./db/app/postgres/pgdata:/var/lib/postgresql/data
