@@ -22,10 +22,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.13.8
-        version: 1.13.8(hono@4.7.4)
+        version: 1.13.8(hono@4.7.5)
       hono:
-        specifier: ^4.7.4
-        version: 4.7.4
+        specifier: ^4.7.5
+        version: 4.7.5
     devDependencies:
       tsx:
         specifier: ^4.7.1
@@ -394,13 +394,13 @@ packages:
       levn: 0.4.1
     dev: true
 
-  /@hono/node-server@1.13.8(hono@4.7.4):
+  /@hono/node-server@1.13.8(hono@4.7.5):
     resolution: {integrity: sha512-fsn8ucecsAXUoVxrUil0m13kOEq4mkX4/4QozCqmY+HpGfKl74OYSn8JcMA8GnG0ClfdRI4/ZSeG7zhFaVg+wg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
     dependencies:
-      hono: 4.7.4
+      hono: 4.7.5
     dev: false
 
   /@humanfs/core@0.19.1:
@@ -2205,8 +2205,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@4.7.4:
-    resolution: {integrity: sha512-Pst8FuGqz3L7tFF+u9Pu70eI0xa5S3LPUmrNd5Jm8nTHze9FxLTK9Kaj5g/k4UcwuJSXTP65SyHOPLrffpcAJg==}
+  /hono@4.7.5:
+    resolution: {integrity: sha512-fDOK5W2C1vZACsgLONigdZTRZxuBqFtcKh7bUQ5cVSbwI2RWjloJDcgFOVzbQrlI6pCmhlTsVYZ7zpLj4m4qMQ==}
     engines: {node: '>=16.9.0'}
     dev: false
 
