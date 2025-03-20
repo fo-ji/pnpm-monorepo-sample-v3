@@ -64,7 +64,7 @@ pnpm web dev
 pnpm api dev
 ```
 
-## ワークスペース内のすべてのパッケージから `xxxx` と `@types/yyyy` を削除する（-r オプション）
+### ワークスペース内のすべてのパッケージから `xxxx` と `@types/yyyy` を削除する（-r オプション）
 ```zsh
 pnpm remove xxxx @types/yyyy -r
 ```
