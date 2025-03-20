@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # pnpm でも npm を指定
+    directory: "/" # ルートの package.json
+    schedule:
+      interval: "daily" # "weekly"
+    # versioning-strategy: increase
+    # commit-message:
+    #   prefix: "deps"
+
+  - package-ecosystem: "npm"
+    directory: "/apps/web" # web の package.json
+    schedule:
+      interval: "daily" # "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/apps/api" # api の package.json
+    schedule:
+      interval: "daily" # "weekly"
