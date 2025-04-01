@@ -13,7 +13,7 @@
   },
   "packageManager": "pnpm@8.15.3",
   "devDependencies": {
-    "@types/node": "^22.13.14",
+    "@types/node": "^22.13.16",
     "eslint": "^9.23.0",
     "prettier": "^3.5.3"
   }
