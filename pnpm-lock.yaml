@@ -28,7 +28,7 @@ importers:
         version: 0.4.3(hono@4.7.5)(zod@3.24.2)
       '@prisma/client':
         specifier: ^6.5.0
-        version: 6.5.0(prisma@6.5.0)
+        version: 6.5.0(prisma@6.5.0)(typescript@5.8.3)
       hono:
         specifier: ^4.7.5
         version: 4.7.5
@@ -38,10 +38,13 @@ importers:
     devDependencies:
       prisma:
         specifier: ^6.5.0
-        version: 6.5.0
+        version: 6.5.0(typescript@5.8.3)
       tsx:
         specifier: ^4.7.1
         version: 4.19.3
+      typescript:
+        specifier: ^5
+        version: 5.8.3
 
   apps/web:
     dependencies:
@@ -792,7 +795,7 @@ packages:
     engines: {node: '>=12.4.0'}
     dev: true
 
-  /@prisma/client@6.5.0(prisma@6.5.0):
+  /@prisma/client@6.5.0(prisma@6.5.0)(typescript@5.8.3):
     resolution: {integrity: sha512-M6w1Ql/BeiGoZmhMdAZUXHu5sz5HubyVcKukbLs3l0ELcQb8hTUJxtGEChhv4SVJ0QJlwtLnwOLgIRQhpsm9dw==}
     engines: {node: '>=18.18'}
     requiresBuild: true
@@ -805,7 +808,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      prisma: 6.5.0
+      prisma: 6.5.0(typescript@5.8.3)
+      typescript: 5.8.3
     dev: false
 
   /@prisma/config@6.5.0:
@@ -3105,7 +3109,7 @@ packages:
     hasBin: true
     dev: true
 
-  /prisma@6.5.0:
+  /prisma@6.5.0(typescript@5.8.3):
     resolution: {integrity: sha512-yUGXmWqv5F4PByMSNbYFxke/WbnyTLjnJ5bKr8fLkcnY7U5rU9rUTh/+Fja+gOrRxEgtCbCtca94IeITj4j/pg==}
     engines: {node: '>=18.18'}
     hasBin: true
@@ -3118,6 +3122,7 @@ packages:
     dependencies:
       '@prisma/config': 6.5.0
       '@prisma/engines': 6.5.0
+      typescript: 5.8.3
     optionalDependencies:
       fsevents: 2.3.3
     transitivePeerDependencies:
@@ -3618,7 +3623,6 @@ packages:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
