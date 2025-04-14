@@ -22,16 +22,16 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.14.0
-        version: 1.14.0(hono@4.7.5)
+        version: 1.14.0(hono@4.7.6)
       '@hono/zod-validator':
         specifier: ^0.4.3
-        version: 0.4.3(hono@4.7.5)(zod@3.24.2)
+        version: 0.4.3(hono@4.7.6)(zod@3.24.2)
       '@prisma/client':
         specifier: ^6.5.0
         version: 6.5.0(prisma@6.5.0)(typescript@5.8.3)
       hono:
-        specifier: ^4.7.5
-        version: 4.7.5
+        specifier: ^4.7.6
+        version: 4.7.6
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -49,8 +49,8 @@ importers:
   apps/web:
     dependencies:
       hono:
-        specifier: ^4.7.5
-        version: 4.7.5
+        specifier: ^4.7.6
+        version: 4.7.6
       next:
         specifier: 15.2.4
         version: 15.2.4(react-dom@19.1.0)(react@19.1.0)
@@ -411,22 +411,22 @@ packages:
       levn: 0.4.1
     dev: true
 
-  /@hono/node-server@1.14.0(hono@4.7.5):
+  /@hono/node-server@1.14.0(hono@4.7.6):
     resolution: {integrity: sha512-YUCxJwgHRKSqjrdTk9e4VMGKN27MK5r4+MGPyZTgKH+IYbK+KtYbHeOcPGJ91KGGD6RIQiz2dAHxvjauNhOS8g==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
     dependencies:
-      hono: 4.7.5
+      hono: 4.7.6
     dev: false
 
-  /@hono/zod-validator@0.4.3(hono@4.7.5)(zod@3.24.2):
+  /@hono/zod-validator@0.4.3(hono@4.7.6)(zod@3.24.2):
     resolution: {integrity: sha512-xIgMYXDyJ4Hj6ekm9T9Y27s080Nl9NXHcJkOvkXPhubOLj8hZkOL8pDnnXfvCf5xEE8Q4oMFenQUZZREUY2gqQ==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
     dependencies:
-      hono: 4.7.5
+      hono: 4.7.6
       zod: 3.24.2
     dev: false
 
@@ -2323,8 +2323,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@4.7.5:
-    resolution: {integrity: sha512-fDOK5W2C1vZACsgLONigdZTRZxuBqFtcKh7bUQ5cVSbwI2RWjloJDcgFOVzbQrlI6pCmhlTsVYZ7zpLj4m4qMQ==}
+  /hono@4.7.6:
+    resolution: {integrity: sha512-564rVzELU+9BRqqx5k8sT2NFwGD3I3Vifdb6P7CmM6FiarOSY+fDC+6B+k9wcCb86ReoayteZP2ki0cRLN1jbw==}
     engines: {node: '>=16.9.0'}
     dev: false
 
