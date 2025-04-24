@@ -4,16 +4,37 @@ updates:
     directory: "/" # ルートの package.json
     schedule:
       interval: "weekly"
-    # versioning-strategy: increase
-    # commit-message:
-    #   prefix: "deps"
+      day: "monday" # 月曜日に更新
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "deps(root)"
 
   - package-ecosystem: "npm"
     directory: "/apps/web" # web の package.json
     schedule:
       interval: "weekly"
+      day: "wednesday" # 水曜日に更新
+    groups:
+      web-dependencies:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "deps(web)"
 
   - package-ecosystem: "npm"
     directory: "/apps/api" # api の package.json
     schedule:
       interval: "weekly"
+      day: "friday" # 金曜日に更新
+    groups:
+      api-dependencies:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "deps(api)"
