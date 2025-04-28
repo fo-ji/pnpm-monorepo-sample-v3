@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^22.14.1
-        version: 22.14.1
+        specifier: ^22.15.3
+        version: 22.15.3
       eslint:
         specifier: ^9.25.1
         version: 9.25.1
@@ -22,16 +22,16 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.14.1
-        version: 1.14.1(hono@4.7.7)
+        version: 1.14.1(hono@4.7.8)
       '@hono/zod-validator':
-        specifier: ^0.4.3
-        version: 0.4.3(hono@4.7.7)(zod@3.24.3)
+        specifier: ^0.5.0
+        version: 0.5.0(hono@4.7.8)(zod@3.24.3)
       '@prisma/client':
         specifier: ^6.6.0
         version: 6.6.0(prisma@6.6.0)(typescript@5.8.3)
       hono:
-        specifier: ^4.7.7
-        version: 4.7.7
+        specifier: ^4.7.8
+        version: 4.7.8
       zod:
         specifier: ^3.24.3
         version: 3.24.3
@@ -49,8 +49,8 @@ importers:
   apps/web:
     dependencies:
       hono:
-        specifier: ^4.7.7
-        version: 4.7.7
+        specifier: ^4.7.8
+        version: 4.7.8
       next:
         specifier: 15.3.1
         version: 15.3.1(react-dom@19.1.0)(react@19.1.0)
@@ -612,22 +612,22 @@ packages:
       levn: 0.4.1
     dev: true
 
-  /@hono/node-server@1.14.1(hono@4.7.7):
+  /@hono/node-server@1.14.1(hono@4.7.8):
     resolution: {integrity: sha512-vmbuM+HPinjWzPe7FFPWMMQMsbKE9gDPhaH0FFdqbGpkT5lp++tcWDTxwBl5EgS5y6JVgIaCdjeHRfQ4XRBRjQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
     dependencies:
-      hono: 4.7.7
+      hono: 4.7.8
     dev: false
 
-  /@hono/zod-validator@0.4.3(hono@4.7.7)(zod@3.24.3):
-    resolution: {integrity: sha512-xIgMYXDyJ4Hj6ekm9T9Y27s080Nl9NXHcJkOvkXPhubOLj8hZkOL8pDnnXfvCf5xEE8Q4oMFenQUZZREUY2gqQ==}
+  /@hono/zod-validator@0.5.0(hono@4.7.8)(zod@3.24.3):
+    resolution: {integrity: sha512-ds5bW6DCgAnNHP33E3ieSbaZFd5dkV52ZjyaXtGoR06APFrCtzAsKZxTHwOrJNBdXsi0e5wNwo5L4nVEVnJUdg==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
     dependencies:
-      hono: 4.7.7
+      hono: 4.7.8
       zod: 3.24.3
     dev: false
 
@@ -1206,8 +1206,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@22.14.1:
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+  /@types/node@22.15.3:
+    resolution: {integrity: sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -2589,8 +2589,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@4.7.7:
-    resolution: {integrity: sha512-2PCpQRbN87Crty8/L/7akZN3UyZIAopSoRxCwRbJgUuV1+MHNFHzYFxZTg4v/03cXUm+jce/qa2VSBZpKBm3Qw==}
+  /hono@4.7.8:
+    resolution: {integrity: sha512-PCibtFdxa7/Ldud9yddl1G81GjYaeMYYTq4ywSaNsYbB1Lug4mwtOMJf2WXykL0pntYwmpRJeOI3NmoDgD+Jxw==}
     engines: {node: '>=16.9.0'}
     dev: false
 
