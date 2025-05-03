@@ -1,26 +1,40 @@
-# dependabotの設定を無効化（コメントアウト）
 # version: 2
 # updates:
-#   - package-ecosystem: "npm"
-#     directory: "/"
+#   - package-ecosystem: "npm" # pnpm でも npm を指定
+#     directory: "/" # ルートの package.json
 #     schedule:
 #       interval: "weekly"
-#     open-pull-requests-limit: 0
-#     ignore:
-#       - dependency-name: "*"
-#
+#       day: "monday" # 月曜日に更新
+#     groups:
+#       all-dependencies:
+#         patterns:
+#           - "*"
+#     open-pull-requests-limit: 10
+#     commit-message:
+#       prefix: "deps(root)"
+
 #   - package-ecosystem: "npm"
-#     directory: "/apps/web"
+#     directory: "/apps/web" # web の package.json
 #     schedule:
 #       interval: "weekly"
-#     open-pull-requests-limit: 0
-#     ignore:
-#       - dependency-name: "*"
-#
+#       day: "wednesday" # 水曜日に更新
+#     groups:
+#       web-dependencies:
+#         patterns:
+#           - "*"
+#     open-pull-requests-limit: 10
+#     commit-message:
+#       prefix: "deps(web)"
+
 #   - package-ecosystem: "npm"
-#     directory: "/apps/api"
+#     directory: "/apps/api" # api の package.json
 #     schedule:
 #       interval: "weekly"
-#     open-pull-requests-limit: 0
-#     ignore:
-#       - dependency-name: "*"
+#       day: "friday" # 金曜日に更新
+#     groups:
+#       api-dependencies:
+#         patterns:
+#           - "*"
+#     open-pull-requests-limit: 10
+#     commit-message:
+#       prefix: "deps(api)"
